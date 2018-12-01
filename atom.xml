@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>阳光徐来的小博</title>
+  
+  <subtitle>阳光阳刚，聪明勇敢</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2018-03-07T07:46:36.459Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>阳光徐来</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>阳光灿烂的一天</title>
+    <link href="http://yoursite.com/2018/03/07/%E9%98%B3%E5%85%89%E7%81%BF%E7%83%82%E7%9A%84%E4%B8%80%E5%A4%A9/"/>
+    <id>http://yoursite.com/2018/03/07/阳光灿烂的一天/</id>
+    <published>2018-03-07T06:07:21.000Z</published>
+    <updated>2018-03-07T07:46:36.459Z</updated>
+    
+    <content type="html"><![CDATA[<p>插入一幅图片哦：）</p><p><img src="https://i.imgur.com/kMsN7vj.jpg" alt=""></p><p><strong>阳光灿烂的一天，开始尝试图文混编！</strong></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;插入一幅图片哦：）&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/kMsN7vj.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;阳光灿烂的一天，开始尝试图文混编！&lt;/strong&gt;&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="宠物" scheme="http://yoursite.com/tags/%E5%AE%A0%E7%89%A9/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>第一次尝试</title>
+    <link href="http://yoursite.com/2018/03/07/%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%B0%9D%E8%AF%95/"/>
+    <id>http://yoursite.com/2018/03/07/第一次尝试/</id>
+    <published>2018-03-07T03:50:21.000Z</published>
+    <updated>2018-03-07T07:46:55.925Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>小博今天开始试用喽，不断学习，不断进步！</strong></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;strong&gt;小博今天开始试用喽，不断学习，不断进步！&lt;/strong&gt;&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="心情" scheme="http://yoursite.com/tags/%E5%BF%83%E6%83%85/"/>
+    
+  </entry>
+  
+</feed>
