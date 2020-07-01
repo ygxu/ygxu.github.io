@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-03-07T07:46:36.459Z</updated>
+  <updated>2020-06-30T14:27:07.517Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,52 +17,62 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>阳光灿烂的一天</title>
-    <link href="http://yoursite.com/2018/03/07/%E9%98%B3%E5%85%89%E7%81%BF%E7%83%82%E7%9A%84%E4%B8%80%E5%A4%A9/"/>
-    <id>http://yoursite.com/2018/03/07/阳光灿烂的一天/</id>
-    <published>2018-03-07T06:07:21.000Z</published>
-    <updated>2018-03-07T07:46:36.459Z</updated>
+    <title></title>
+    <link href="http://yoursite.com/2020/06/29/Scratch%E7%89%88%E4%BF%9D%E5%8D%AB%E8%90%9D%E5%8D%9C%EF%BC%88%E4%BA%8C%EF%BC%89%E5%9C%B0%E5%9B%BE%E7%BC%96%E8%BE%91/"/>
+    <id>http://yoursite.com/2020/06/29/Scratch版保卫萝卜（二）地图编辑/</id>
+    <published>2020-06-29T14:17:59.199Z</published>
+    <updated>2020-06-30T14:27:07.517Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;插入一幅图片哦：）&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/kMsN7vj.jpg&quot;
-        
-      
+      &lt;hr&gt;
+&lt;p&gt;title: Scratch版保卫萝卜（二）地图编辑&lt;br&gt;date: 2020-05-27&lt;br&gt;tags: &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;儿童编程&lt;/li&gt;
+&lt;li&gt;Scratch&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;原创&lt;/strong&gt; 徐鹏程  微信公众号：阳光徐来&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;2020年5月27日&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;开始绘制地图喽~&lt;/p&gt;
+&lt;p&gt;先说一下这个功能的演进过程。&lt;br&gt;上次说过这个项目的架构师是光阳同学，地图功能的第一个方案是架构师亲自上手开发的~是这个样子：&lt;/p&gt;
+&lt;h2 id=&quot;方案一：&quot;&gt;&lt;a href=&quot;#方案一：&quot; class=&quot;headerlink&quot; title=&quot;方案一：&quot;&gt;&lt;/a&gt;方案一：&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;https://static01.imgkr.com/temp/fe7b952ddb3349e18a0a2cb6b361b23b.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;
     
     </summary>
     
-    
-      <category term="宠物" scheme="http://yoursite.com/tags/%E5%AE%A0%E7%89%A9/"/>
     
   </entry>
   
   <entry>
-    <title>第一次尝试</title>
-    <link href="http://yoursite.com/2018/03/07/%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%B0%9D%E8%AF%95/"/>
-    <id>http://yoursite.com/2018/03/07/第一次尝试/</id>
-    <published>2018-03-07T03:50:21.000Z</published>
-    <updated>2018-03-07T07:46:55.925Z</updated>
+    <title>Scratch版保卫萝卜（一）整体效果</title>
+    <link href="http://yoursite.com/2020/05/24/Scratch%E7%89%88%E4%BF%9D%E5%8D%AB%E8%90%9D%E5%8D%9C%EF%BC%88%E4%B8%80%EF%BC%89%E6%95%B4%E4%BD%93%E6%95%88%E6%9E%9C/"/>
+    <id>http://yoursite.com/2020/05/24/Scratch版保卫萝卜（一）整体效果/</id>
+    <published>2020-05-23T16:00:00.000Z</published>
+    <updated>2020-06-30T13:50:36.405Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;&lt;strong&gt;小博今天开始试用喽，不断学习，不断进步！&lt;/strong&gt;&lt;/p&gt;
-
-        
-      
+      &lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;原创&lt;/strong&gt; 徐鹏程  微信公众号：阳光徐来&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;2020年5月24日&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;最近光阳同学编程长进不错哦，键盘鼠标用的是越来越溜了&lt;/p&gt;
+&lt;p&gt;还有值得表扬的！看到小伙伴在手机上玩的游戏，第一个想法居然是自己做一个！！&lt;/p&gt;
+&lt;p&gt;于是他的首席编程导师，从精神和行动上一并支持！&lt;/p&gt;
+&lt;p&gt;于是和光阳同学一起，注意是一起哦，开始行动~&lt;br&gt;
     
     </summary>
     
     
-      <category term="心情" scheme="http://yoursite.com/tags/%E5%BF%83%E6%83%85/"/>
+      <category term="儿童编程" scheme="http://yoursite.com/tags/%E5%84%BF%E7%AB%A5%E7%BC%96%E7%A8%8B/"/>
+    
+      <category term="Scratch" scheme="http://yoursite.com/tags/Scratch/"/>
     
   </entry>
   

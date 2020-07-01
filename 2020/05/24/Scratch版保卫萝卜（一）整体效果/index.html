@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 3.8.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon2.png">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"8.0.0-rc.3","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="原创 徐鹏程  微信公众号：阳光徐来   2020年5月24日  最近光阳同学编程长进不错哦，键盘鼠标用的是越来越溜了 还有值得表扬的！看到小伙伴在手机上玩的游戏，第一个想法居然是自己做一个！！ 于是他的首席编程导师，从精神和行动上一并支持！ 于是和光阳同学一起，注意是一起哦，开始行动~">
+<meta name="keywords" content="儿童编程,Scratch">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Scratch版保卫萝卜（一）整体效果">
+<meta property="og:url" content="http://yoursite.com/2020/05/24/Scratch版保卫萝卜（一）整体效果/index.html">
+<meta property="og:site_name" content="阳光徐来的小博">
+<meta property="og:description" content="原创 徐鹏程  微信公众号：阳光徐来   2020年5月24日  最近光阳同学编程长进不错哦，键盘鼠标用的是越来越溜了 还有值得表扬的！看到小伙伴在手机上玩的游戏，第一个想法居然是自己做一个！！ 于是他的首席编程导师，从精神和行动上一并支持！ 于是和光阳同学一起，注意是一起哦，开始行动~">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://static01.imgkr.com/temp/f67e0177921a43d79a27cdf9794eddd3.png">
+<meta property="og:image" content="https://static01.imgkr.com/temp/1a41005901b5441bae65b18d1c8ade41.png">
+<meta property="og:image" content="https://static01.imgkr.com/temp/7644dd2372cf454c8c84f2b21bb0c0db.gif">
+<meta property="og:updated_time" content="2020-06-30T13:50:36.405Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Scratch版保卫萝卜（一）整体效果">
+<meta name="twitter:description" content="原创 徐鹏程  微信公众号：阳光徐来   2020年5月24日  最近光阳同学编程长进不错哦，键盘鼠标用的是越来越溜了 还有值得表扬的！看到小伙伴在手机上玩的游戏，第一个想法居然是自己做一个！！ 于是他的首席编程导师，从精神和行动上一并支持！ 于是和光阳同学一起，注意是一起哦，开始行动~">
+<meta name="twitter:image" content="https://static01.imgkr.com/temp/f67e0177921a43d79a27cdf9794eddd3.png">
+
+<link rel="canonical" href="http://yoursite.com/2020/05/24/Scratch版保卫萝卜（一）整体效果/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>Scratch版保卫萝卜（一）整体效果 | 阳光徐来的小博</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .header-inner,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <main class="main">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+        <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+        <span class="toggle-line toggle-line-first"></span>
+        <span class="toggle-line toggle-line-middle"></span>
+        <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">阳光徐来的小博</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">阳光阳刚，聪明勇敢</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-photos">
+
+    <a href="/photo" rel="section"><i class="fa fa-photo-video fa-fw"></i>相册</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" placeholder="搜索..." spellcheck="false" type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <section class="post-toc-wrap sidebar-panel">
+      </section>
+      <!--/noindex-->
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="阳光徐来" src="/assets/img/avatar.png">
+  <p class="site-author-name" itemprop="name">阳光徐来</p>
+  <div class="site-description" itemprop="description">2013年萌男一枚，爱积木，爱绘本，勇于尝试。愿你前途无量！</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/ygxu" title="GitHub → https://github.com/ygxu" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:xupc@live.com" title="E-Mail → mailto:xupc@live.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzIyMDc0MDc1OQ==&scene=124#wechat_redirect" title="WeChatMP → https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzIyMDc0MDc1OQ==&scene=124#wechat_redirect" rel="noopener" target="_blank"><i class="fab fa-weixin fa-fw"></i></a>
+      </span>
+  </div>
+
+
+
+      </section>
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </header>
+
+      
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div id="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+      <div class="main-inner">
+        
+
+        <div class="content post posts-expand">
+          
+
+    
+  
+  
+  <article itemscope="" itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/24/Scratch版保卫萝卜（一）整体效果/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/assets/img/avatar.png">
+      <meta itemprop="name" content="阳光徐来">
+      <meta itemprop="description" content="2013年萌男一枚，爱积木，爱绘本，勇于尝试。愿你前途无量！">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="阳光徐来的小博">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Scratch版保卫萝卜（一）整体效果
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-05-24 00:00:00" itemprop="dateCreated datePublished" datetime="2020-05-24T00:00:00+08:00">2020-05-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-06-30 21:50:36" itemprop="dateModified" datetime="2020-06-30T21:50:36+08:00">2020-06-30</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <blockquote>
+<p><strong>原创</strong> 徐鹏程  微信公众号：阳光徐来</p>
+</blockquote>
+<blockquote>
+<p>2020年5月24日</p>
+</blockquote>
+<p>最近光阳同学编程长进不错哦，键盘鼠标用的是越来越溜了</p>
+<p>还有值得表扬的！看到小伙伴在手机上玩的游戏，第一个想法居然是自己做一个！！</p>
+<p>于是他的首席编程导师，从精神和行动上一并支持！</p>
+<p>于是和光阳同学一起，注意是一起哦，开始行动~<br><a id="more"></a><br>于是，有了下面这个，Scratch版保卫萝卜！<br><img src="https://static01.imgkr.com/temp/f67e0177921a43d79a27cdf9794eddd3.png" alt=""></p>
+<p>玩起来是这样的：<br><img src="https://static01.imgkr.com/temp/1a41005901b5441bae65b18d1c8ade41.png" alt=""></p>
+<p><del>视频来了~！</del></p>
+<p>放不了视频，简单来个动图吧~！<br><img src="https://static01.imgkr.com/temp/7644dd2372cf454c8c84f2b21bb0c0db.gif" alt=""></p>
+<p>可是：这可不是个小工程哦，在Scratch里面实现起来，还是颇费了些周章，娃玩的高兴，当然是值了！</p>
+<p>为了能让这个小工程更有意义，光阳的首席编程导师决定做个小系列，把一些经验分享一下，和各位有同样兴趣的首席导师们一起交流~</p>
+<hr>
+<blockquote>
+<p>所以：</p>
+</blockquote>
+<p>今天是<strong>第（一）节，整体看一下效果，分析一下难点。</strong></p>
+<p>手机版的保卫萝卜【已经出到3了吗？我好像只玩过1】，是包含很多关卡的，但为了简化编程，这里就只能做一个关卡了。</p>
+<p>那怎么体现玩法的变化呢？</p>
+<p>–就是：地图是可编辑的，每次开局之前自由设定地图，那是不是每次玩起来就不一样了呢~~</p>
+<p>【上面的两幅图是能看出来地图不一样了吧。】</p>
+<p>听起来是个蛮简单的功能呢，那要实现起来呢。。。而且还要的是最便于操作的鼠标点击拖动绘制地图呢？？</p>
+<p>请期待<strong>第（二）节 地图编辑器</strong></p>
+<p>有了地图，那怪物就该出来吃萝卜了，至于为啥是恐龙？恐龙喜欢吃萝卜吗？？恐龙时代有萝卜吗？？？</p>
+<p>我不知道~请采访光阳同学！</p>
+<p>但是：怎么让恐龙沿着地图的线路，快乐的奔向萝卜？？？？</p>
+<p>这是本系列Scratch编程分享的次重点哦。</p>
+<p>请期待<strong>第（三）节 路线跟随</strong></p>
+<p>对了，这个游戏叫保卫萝卜，不是欢乐恐龙吃萝卜，所以：</p>
+<p>要有武器，各种武器，在恐龙的必经之路上布下天罗地网，将威胁消灭在路上！</p>
+<p>很简单的一个功能不是吗，学Scratch谁还不知道克隆啊！</p>
+<p>可是：恐龙一群群一队队，乌央乌央的向萝卜驶来，打哪个？枪炮指向谁？？</p>
+<p>这将是本系列Scratch编程分享的重点难点哦。</p>
+<p>请期待<strong>第（四）节 瞄点判断</strong></p>
+<blockquote>
+<p>声明：瞄点部分参考了网上已有的实现方案，虽然我忘了作者名字了。。但实际效果创新很多哦~</p>
+</blockquote>
+<p>当然还有一些常规操作，比如萝卜的血量动画、分数计算、背景切换，比较简单的会在第（五）节做个简单的分享，使系列更完整。</p>
+<p>光阳同学作为架构师，还提出了很多奇思妙想【毕竟人家也是看过手正版保卫萝卜的】，比如要有宝箱，要有飞碟，积分来用来升级武器，还有一种不雅观的武器要使恐龙减速。。。。。</p>
+<p><strong>任重而道远~希望各位首席导师行动起来，我们一起交流！</strong></p>
+
+    </div>
+
+    
+    
+    
+        <div class="reward-container">
+  <div>谢谢你请我吃糖~</div>
+  <button onclick="document.getElementById('post-reward').classList.toggle('active');">
+    赞赏
+  </button>
+  <div id="post-reward">
+      
+      <div>
+        <img src="/assets/img/weixin.png" alt="阳光徐来 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div>
+        <img src="/assets/img/alipay.png" alt="阳光徐来 支付宝">
+        <p>支付宝</p>
+      </div>
+
+  </div>
+</div>
+
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>阳光徐来
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://yoursite.com/2020/05/24/Scratch版保卫萝卜（一）整体效果/" title="Scratch版保卫萝卜（一）整体效果">http://yoursite.com/2020/05/24/Scratch版保卫萝卜（一）整体效果/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+        
+
+  <div class="followme">
+    <p>欢迎关注我的其它发布渠道</p>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/assets/img/gzh344.jpg">
+            <span class="icon">
+              <i class="fab fa-weixin"></i>
+            </span>
+
+            <span class="label">WeChat</span>
+          </a>
+        </div>
+    </div>
+  </div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/儿童编程/" rel="tag"># 儿童编程</a>
+              <a href="/tags/Scratch/" rel="tag"># Scratch</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2020/06/29/Scratch版保卫萝卜（二）地图编辑/" rel="next" title="">
+       <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+        </div>
+        
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+  <div class="beian"><a href="http://www.beian.miit.gov.cn" rel="noopener" target="_blank">鲁ICP备18004439号-2 </a>
+  </div>
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-sun"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">阳光徐来</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+<script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+  <script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
