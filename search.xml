@@ -20,16 +20,6 @@
     <content type="text"><![CDATA[["371.476 111.png","6000.4000 DSC02015.JPG","347.347 光阳圆形头像.png","4608.3456 调研1.jpg","3456.4608 竖版测试.jpg","4608.3456 调研照片.jpg"]]]></content>
   </entry>
   <entry>
-    <title><![CDATA[categories]]></title>
-    <url>%2Fcategories%2Findex.html</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
-    <title><![CDATA[tags]]></title>
-    <url>%2Ftags%2Findex.html</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
     <title><![CDATA[相册]]></title>
     <url>%2Fphotos%2Findex.html</url>
     <content type="text"><![CDATA[.ImageGrid { width: 100%; max-width: 1040px; margin: 0 auto; text-align: center; margin: : 20p;} .card { overflow: hidden; transition: .3s ease-in-out; border-radius: 8px; background-color: #ddd;} .ImageInCard img {padding: 0 0 0 0 !important;height: 100%;} .TextInCard {line-height: 50px;background-color: #f6f6f6;font-size: 26px;} .fancybox-image { transform: none!important;}]]></content>
@@ -38,5 +28,15 @@
     <title></title>
     <url>%2Fphotos%2Fphoto.js</url>
     <content type="text"><![CDATA[photo ={ page: 1, offset: 20, init: function () { var that = this; $.getJSON("/Images/output.json", function (data) { that.render(that.page, data); //that.scroll(data); }); }, render: function (page, data) { var begin = (page - 1) * this.offset; var end = page * this.offset; if (begin >= data.length) return; var html, imgNameWithPattern,imgName,iamgeSize,imageX,imageY, li = ""; for (var i = begin; i < end && i < data.length; i++) { imgNameWithPattern = data[i].split(' ')[1]; imgName = imgNameWithPattern.split('.')[0] iamgeSize = data[i].split(' ')[0]; imageX = iamgeSize.split('.')[0]; imageY = iamgeSize.split('.')[1]; li += '' + '' + '' + '' + '' + '' + ''+imgName.substr(0,7)+'' + '' } $(".ImageGrid").append(li); // $(".ImageGrid").lazyload(); this.minigrid(); }, minigrid: function() { var grid = new Minigrid({ container: '.ImageGrid', item: '.card', gutter: 20 }); grid.mount(); $(window).resize(function() { grid.mount(); }); } } photo.init();]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[categories]]></title>
+    <url>%2Fcategories%2Findex.html</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[tags]]></title>
+    <url>%2Ftags%2Findex.html</url>
+    <content type="text"></content>
   </entry>
 </search>
