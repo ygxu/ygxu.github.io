@@ -35,19 +35,14 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[tags]]></title>
-    <url>%2Ftags%2Findex.html</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
     <title><![CDATA[categories]]></title>
     <url>%2Fcategories%2Findex.html</url>
     <content type="text"></content>
   </entry>
   <entry>
-    <title></title>
-    <url>%2Fphotos%2Fphoto.js</url>
-    <content type="text"><![CDATA[photo ={ page: 1, offset: 20, init: function () { var that = this; $.getJSON("/photos/photoslist.json", function (data) { that.render(that.page, data); //that.scroll(data); }); }, render: function (page, data) { var begin = (page - 1) * this.offset; var end = page * this.offset; if (begin >= data.length) return; var html, imgNameWithPattern,imgName,iamgeSize,imageX,imageY, li = ""; for (var i = begin; i < end && i < data.length; i++) { imgNameWithPattern = data[i].split(' ')[1]; imgName = imgNameWithPattern.split('.')[0] iamgeSize = data[i].split(' ')[0]; imageX = iamgeSize.split('.')[0]; imageY = iamgeSize.split('.')[1]; li += '' + '' + '' + '' + '' + '' + ''+imgName.substr(0,7)+'' + '' } $(".ImageGrid").append(li); // $(".ImageGrid").lazyload(); this.minigrid(); }, minigrid: function() { var grid = new Minigrid({ container: '.ImageGrid', item: '.card', gutter: 20 }); grid.mount(); $(window).resize(function() { grid.mount(); }); } } photo.init();]]></content>
+    <title><![CDATA[tags]]></title>
+    <url>%2Ftags%2Findex.html</url>
+    <content type="text"></content>
   </entry>
   <entry>
     <title><![CDATA[相册]]></title>
@@ -57,6 +52,11 @@
   <entry>
     <title></title>
     <url>%2Fphotos%2Fphotoslist.json</url>
-    <content type="text"><![CDATA[["347.347 光阳圆形头像.png","6000.4000 和直升机的合影.JPG","3456.4608 竖版测试.jpg","371.476 素材蚂蚁.png","4608.3456 调研1.jpg","4608.3456 调研照片.jpg"]]]></content>
+    <content type="text"><![CDATA[["1620.1080 写生.JPG","1620.1080 写生2.JPG","1080.720 启航.jpg","1440.1080 和哪吒做朋友.jpg","1080.720 和姥姥妈妈一起.jpg","1080.810 和爸爸妈妈去划船.jpg","1440.1080 哪吒合影2.jpg","1440.1080 哪吒合影1.jpg","1440.1080 哪吒合影3.jpg","1080.720 喂海鸥.jpg","1080.720 妈妈美照.jpg","4525.3016 幼儿园表演.jpg","1080.720 我和我的乐高战队.jpg","607.1080 我在火车站.jpg","1080.720 海军博物馆之直升机.jpg","1080.720 海军博物馆和妈妈.jpg","1080.720 海军博物馆和妈妈2.jpg","1200.674 海洋馆1.jpg","1080.720 海军博物馆和妈妈一起.jpg","1024.767 海洋馆4.jpg","1024.767 海洋馆3.jpg","1200.675 海洋馆2.jpg","1024.768 海洋馆5.jpg","1024.768 海洋馆6.jpg","1024.768 海洋馆7.jpg","1616.1080 演出1.jpg","1440.1080 演出3.jpg","1440.1080 演出2.jpg","1440.1080 老虎猫.jpg","1440.1080 荷花童子.jpg","1200.675 花开彼岸天.jpg","1200.675 鱼跃此时海.jpg"]]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>%2Fphotos%2Fphoto.js</url>
+    <content type="text"><![CDATA[photo ={ page: 1, offset: 20, init: function () { var that = this; $.getJSON("/photos/photoslist.json", function (data) { that.render(that.page, data); //that.scroll(data); }); }, render: function (page, data) { var begin = (page - 1) * this.offset; var end = page * this.offset; if (begin >= data.length) return; var html, imgNameWithPattern,imgName,iamgeSize,imageX,imageY, li = ""; for (var i = begin; i < end && i < data.length; i++) { imgNameWithPattern = data[i].split(' ')[1]; imgName = imgNameWithPattern.split('.')[0] iamgeSize = data[i].split(' ')[0]; imageX = iamgeSize.split('.')[0]; imageY = iamgeSize.split('.')[1]; li += '' + '' + '' + '' + '' + '' + ''+imgName.substr(0,7)+'' + '' } $(".ImageGrid").append(li); // $(".ImageGrid").lazyload(); this.minigrid(); }, minigrid: function() { var grid = new Minigrid({ container: '.ImageGrid', item: '.card', gutter: 20 }); grid.mount(); $(window).resize(function() { grid.mount(); }); } } photo.init();]]></content>
   </entry>
 </search>
