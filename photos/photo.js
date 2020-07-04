@@ -3,7 +3,7 @@ photo ={
     offset: 20,
     init: function () {
         var that = this;
-        $.getJSON("/Images/output.json", function (data) {
+        $.getJSON("/photos/photoslist.json", function (data) {
             that.render(that.page, data);
             //that.scroll(data);
         });

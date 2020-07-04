@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-06-30T14:27:07.517Z</updated>
+  <updated>2020-07-03T14:22:08.361Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,22 +17,65 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
-    <link href="http://yoursite.com/2020/06/29/Scratch%E7%89%88%E4%BF%9D%E5%8D%AB%E8%90%9D%E5%8D%9C%EF%BC%88%E4%BA%8C%EF%BC%89%E5%9C%B0%E5%9B%BE%E7%BC%96%E8%BE%91/"/>
-    <id>http://yoursite.com/2020/06/29/Scratch版保卫萝卜（二）地图编辑/</id>
-    <published>2020-06-29T14:17:59.199Z</published>
-    <updated>2020-06-30T14:27:07.517Z</updated>
+    <title>第一次尝试</title>
+    <link href="http://yoursite.com/2020/07/03/%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%B0%9D%E8%AF%95/"/>
+    <id>http://yoursite.com/2020/07/03/第一次尝试/</id>
+    <published>2020-07-03T03:50:21.000Z</published>
+    <updated>2020-07-03T14:22:08.361Z</updated>
     
     <summary type="html">
     
-      &lt;hr&gt;
-&lt;p&gt;title: Scratch版保卫萝卜（二）地图编辑&lt;br&gt;date: 2020-05-27&lt;br&gt;tags: &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;儿童编程&lt;/li&gt;
-&lt;li&gt;Scratch&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;blockquote&gt;
+      
+      
+        
+        
+          &lt;p&gt;&lt;strong&gt;小博今天开始试用喽，不断学习，不断进步！&lt;/strong&gt;&lt;/p&gt;
+
+        
+      
+    
+    </summary>
+    
+    
+      <category term="心情" scheme="http://yoursite.com/tags/%E5%BF%83%E6%83%85/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>阳光灿烂的一天</title>
+    <link href="http://yoursite.com/2020/07/01/%E9%98%B3%E5%85%89%E7%81%BF%E7%83%82%E7%9A%84%E4%B8%80%E5%A4%A9/"/>
+    <id>http://yoursite.com/2020/07/01/阳光灿烂的一天/</id>
+    <published>2020-07-01T06:07:21.000Z</published>
+    <updated>2020-07-03T14:22:35.478Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;插入一幅图片哦：）&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/kMsN7vj.jpg&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="宠物" scheme="http://yoursite.com/tags/%E5%AE%A0%E7%89%A9/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Scratch版保卫萝卜（二）地图编辑</title>
+    <link href="http://yoursite.com/2020/05/27/Scratch%E7%89%88%E4%BF%9D%E5%8D%AB%E8%90%9D%E5%8D%9C%EF%BC%88%E4%BA%8C%EF%BC%89%E5%9C%B0%E5%9B%BE%E7%BC%96%E8%BE%91/"/>
+    <id>http://yoursite.com/2020/05/27/Scratch版保卫萝卜（二）地图编辑/</id>
+    <published>2020-05-26T16:00:00.000Z</published>
+    <updated>2020-07-03T14:36:41.052Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;原创&lt;/strong&gt; 徐鹏程  微信公众号：阳光徐来&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
@@ -44,6 +87,10 @@
     
     </summary>
     
+    
+      <category term="儿童编程" scheme="http://yoursite.com/tags/%E5%84%BF%E7%AB%A5%E7%BC%96%E7%A8%8B/"/>
+    
+      <category term="Scratch" scheme="http://yoursite.com/tags/Scratch/"/>
     
   </entry>
   

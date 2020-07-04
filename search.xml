@@ -1,9 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title></title>
-    <url>%2F2020%2F06%2F29%2FScratch%E7%89%88%E4%BF%9D%E5%8D%AB%E8%90%9D%E5%8D%9C%EF%BC%88%E4%BA%8C%EF%BC%89%E5%9C%B0%E5%9B%BE%E7%BC%96%E8%BE%91%2F</url>
-    <content type="text"><![CDATA[title: Scratch版保卫萝卜（二）地图编辑date: 2020-05-27tags: 儿童编程 Scratch 原创 徐鹏程 微信公众号：阳光徐来 2020年5月27日 开始绘制地图喽~ 先说一下这个功能的演进过程。上次说过这个项目的架构师是光阳同学，地图功能的第一个方案是架构师亲自上手开发的~是这个样子： 方案一：程序也很简单，就是↑↓←→按键画线： 地图是简单了，但怪物的路线跟随就会有很大的问题，放个怪物的造型就知道是咋实现的了： 这货跑起来步态相当不雅，关键是不能有重叠，很容易跑成满屏幕边缘的恐龙 架构师光阳同学也发现了这个问题，说这样不行，两个恐龙见面就打架，还打出去一只，这样不行，他们是来吃萝卜的（虽然目前还是个D），不是来打架的，你得给我解决这个问题~！所以，解决方案来了~ 方案二： 地图的编辑方式已经从键盘操作，变成鼠标点击，用了两个列表，来记录每个转折点的坐标值。【Scratch怎么使用多维数组。。。】 程序是这样的： 为啥要记录每个转折点呢？当然是给怪物恐龙用的： 考虑到手机屏幕太小，很长的那条积木没截全，其实就是计算两个转折点之间距离的，为了避免不同的距离恐龙走起来忽快忽慢，如魔鬼的步伐，用这个距离来计算速度 这样怪物就能沿着正确的路线，整齐的向萝卜进发，而且还不用那两个传感器了，而且且，速度不同的怪物重叠也不会打架打出去一只了~ 这里有个重点要划： 给克隆体用的变量记得用私有变量哦~！ 架构师光阳同学觉得我很好的实现了他的顶层设计，开始让他的恐龙吃萝卜，就在恐龙快吃吐了的时候，他的小伙伴来找他玩耍~ 然后意识到一个问题，保卫萝卜好像应该是这样的： 我们做的这个版本不是不像，是太不像了，于是，才有了↓ 方案三：也是今天着重要分享的内容，看起来是这个样子~ 对，就是第（一）篇分享里的效果了。我们看程序~ 首先是初始化部分： 初始化的变量： 【边长】是每个正方形格子的边长，当然也是两个格子间的距离。有人要问我怎么能按这个边长画出准确大小的方块呢？答案：不用准确，随心而画，最后用角色大小去调整就是了，但最好按住Shift画正方啊。。 【出口X】【出口Y】第一个红色格子的中心点，也是后面出怪的地方，是爱吃萝卜的外太空入侵者的空间传送点好吧，不扯 【X向移动】【Y向移动】用来保存点击位置和当前格子之间的距离，但不是像素距离，而是换算成格子的数量，先看重复执行程序： 再看【计算格子】这个函数（自制积木）： 是不是很简单~这里还用到了两个列表【X向移动】和【Y向移动】 用来记录每一次点击的地图走向，详细线路尽在掌握，给谁用呢？你猜~ 知道了X方向和Y方向要移动的格子数，下一步当然是移动+图章了，为了让程序看上去整洁，又用到了两个自制积木： 谜之算法格数/格数的绝对值=？ 好了~！有点像保卫萝卜的一款画图游戏3A塔防游戏大作，终于迈出了重要的第一步~！今天就先到这里了，下次，要分享更重要的内容：怎么让恐龙沿着地图的线路，快乐的奔向萝卜 你看你都读完了，看来我们有缘哦，关注转发+在看~下次，给你更精彩的！]]></content>
+    <title><![CDATA[第一次尝试]]></title>
+    <url>%2F2020%2F07%2F03%2F%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%B0%9D%E8%AF%95%2F</url>
+    <content type="text"><![CDATA[小博今天开始试用喽，不断学习，不断进步！]]></content>
+      <tags>
+        <tag>心情</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[阳光灿烂的一天]]></title>
+    <url>%2F2020%2F07%2F01%2F%E9%98%B3%E5%85%89%E7%81%BF%E7%83%82%E7%9A%84%E4%B8%80%E5%A4%A9%2F</url>
+    <content type="text"><![CDATA[插入一幅图片哦：） 阳光灿烂的一天，开始尝试图文混编！]]></content>
+      <tags>
+        <tag>宠物</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Scratch版保卫萝卜（二）地图编辑]]></title>
+    <url>%2F2020%2F05%2F27%2FScratch%E7%89%88%E4%BF%9D%E5%8D%AB%E8%90%9D%E5%8D%9C%EF%BC%88%E4%BA%8C%EF%BC%89%E5%9C%B0%E5%9B%BE%E7%BC%96%E8%BE%91%2F</url>
+    <content type="text"><![CDATA[原创 徐鹏程 微信公众号：阳光徐来 2020年5月27日 开始绘制地图喽~ 先说一下这个功能的演进过程。上次说过这个项目的架构师是光阳同学，地图功能的第一个方案是架构师亲自上手开发的~是这个样子： 方案一：程序也很简单，就是↑↓←→按键画线： 地图是简单了，但怪物的路线跟随就会有很大的问题，放个怪物的造型就知道是咋实现的了： 这货跑起来步态相当不雅，关键是不能有重叠，很容易跑成满屏幕边缘的恐龙 架构师光阳同学也发现了这个问题，说这样不行，两个恐龙见面就打架，还打出去一只，这样不行，他们是来吃萝卜的（虽然目前还是个D），不是来打架的，你得给我解决这个问题~！所以，解决方案来了~ 方案二： 地图的编辑方式已经从键盘操作，变成鼠标点击，用了两个列表，来记录每个转折点的坐标值。【Scratch怎么使用多维数组。。。】 程序是这样的： 为啥要记录每个转折点呢？当然是给怪物恐龙用的： 考虑到手机屏幕太小，很长的那条积木没截全，其实就是计算两个转折点之间距离的，为了避免不同的距离恐龙走起来忽快忽慢，如魔鬼的步伐，用这个距离来计算速度 这样怪物就能沿着正确的路线，整齐的向萝卜进发，而且还不用那两个传感器了，而且且，速度不同的怪物重叠也不会打架打出去一只了~ 这里有个重点要划： 给克隆体用的变量记得用私有变量哦~！ 架构师光阳同学觉得我很好的实现了他的顶层设计，开始让他的恐龙吃萝卜，就在恐龙快吃吐了的时候，他的小伙伴来找他玩耍~ 然后意识到一个问题，保卫萝卜好像应该是这样的： 我们做的这个版本不是不像，是太不像了，于是，才有了↓ 方案三：也是今天着重要分享的内容，看起来是这个样子~ 对，就是第（一）篇分享里的效果了。我们看程序~ 首先是初始化部分： 初始化的变量： 【边长】是每个正方形格子的边长，当然也是两个格子间的距离。有人要问我怎么能按这个边长画出准确大小的方块呢？答案：不用准确，随心而画，最后用角色大小去调整就是了，但最好按住Shift画正方啊。。 【出口X】【出口Y】第一个红色格子的中心点，也是后面出怪的地方，是爱吃萝卜的外太空入侵者的空间传送点好吧，不扯 【X向移动】【Y向移动】用来保存点击位置和当前格子之间的距离，但不是像素距离，而是换算成格子的数量，先看重复执行程序： 再看【计算格子】这个函数（自制积木）： 是不是很简单~这里还用到了两个列表【X向移动】和【Y向移动】 用来记录每一次点击的地图走向，详细线路尽在掌握，给谁用呢？你猜~ 知道了X方向和Y方向要移动的格子数，下一步当然是移动+图章了，为了让程序看上去整洁，又用到了两个自制积木： 谜之算法格数/格数的绝对值=？ 好了~！有点像保卫萝卜的一款画图游戏3A塔防游戏大作，终于迈出了重要的第一步~！今天就先到这里了，下次，要分享更重要的内容：怎么让恐龙沿着地图的线路，快乐的奔向萝卜 你看你都读完了，看来我们有缘哦，关注转发+在看~下次，给你更精彩的！]]></content>
+      <tags>
+        <tag>儿童编程</tag>
+        <tag>Scratch</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[Scratch版保卫萝卜（一）整体效果]]></title>
@@ -16,8 +36,8 @@
   </entry>
   <entry>
     <title></title>
-    <url>%2FImages%2Foutput.json</url>
-    <content type="text"><![CDATA[["371.476 111.png","6000.4000 DSC02015.JPG","347.347 光阳圆形头像.png","4608.3456 调研1.jpg","3456.4608 竖版测试.jpg","4608.3456 调研照片.jpg"]]]></content>
+    <url>%2Fphotos%2Fphoto.js</url>
+    <content type="text"><![CDATA[photo ={ page: 1, offset: 20, init: function () { var that = this; $.getJSON("/photos/photoslist.json", function (data) { that.render(that.page, data); //that.scroll(data); }); }, render: function (page, data) { var begin = (page - 1) * this.offset; var end = page * this.offset; if (begin >= data.length) return; var html, imgNameWithPattern,imgName,iamgeSize,imageX,imageY, li = ""; for (var i = begin; i < end && i < data.length; i++) { imgNameWithPattern = data[i].split(' ')[1]; imgName = imgNameWithPattern.split('.')[0] iamgeSize = data[i].split(' ')[0]; imageX = iamgeSize.split('.')[0]; imageY = iamgeSize.split('.')[1]; li += '' + '' + '' + '' + '' + '' + ''+imgName.substr(0,7)+'' + '' } $(".ImageGrid").append(li); // $(".ImageGrid").lazyload(); this.minigrid(); }, minigrid: function() { var grid = new Minigrid({ container: '.ImageGrid', item: '.card', gutter: 20 }); grid.mount(); $(window).resize(function() { grid.mount(); }); } } photo.init();]]></content>
   </entry>
   <entry>
     <title><![CDATA[相册]]></title>
@@ -25,14 +45,14 @@
     <content type="text"><![CDATA[.ImageGrid { width: 100%; max-width: 1040px; margin: 0 auto; text-align: center; margin: : 20p;} .card { overflow: hidden; transition: .3s ease-in-out; border-radius: 8px; background-color: #ddd;} .ImageInCard img {padding: 0 0 0 0 !important;height: 100%;} .TextInCard {line-height: 50px;background-color: #f6f6f6;font-size: 26px;} .fancybox-image { transform: none!important;}]]></content>
   </entry>
   <entry>
-    <title></title>
-    <url>%2Fphotos%2Fphoto.js</url>
-    <content type="text"><![CDATA[photo ={ page: 1, offset: 20, init: function () { var that = this; $.getJSON("/Images/output.json", function (data) { that.render(that.page, data); //that.scroll(data); }); }, render: function (page, data) { var begin = (page - 1) * this.offset; var end = page * this.offset; if (begin >= data.length) return; var html, imgNameWithPattern,imgName,iamgeSize,imageX,imageY, li = ""; for (var i = begin; i < end && i < data.length; i++) { imgNameWithPattern = data[i].split(' ')[1]; imgName = imgNameWithPattern.split('.')[0] iamgeSize = data[i].split(' ')[0]; imageX = iamgeSize.split('.')[0]; imageY = iamgeSize.split('.')[1]; li += '' + '' + '' + '' + '' + '' + ''+imgName.substr(0,7)+'' + '' } $(".ImageGrid").append(li); // $(".ImageGrid").lazyload(); this.minigrid(); }, minigrid: function() { var grid = new Minigrid({ container: '.ImageGrid', item: '.card', gutter: 20 }); grid.mount(); $(window).resize(function() { grid.mount(); }); } } photo.init();]]></content>
-  </entry>
-  <entry>
     <title><![CDATA[categories]]></title>
     <url>%2Fcategories%2Findex.html</url>
     <content type="text"></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>%2Fphotos%2Fphotoslist.json</url>
+    <content type="text"><![CDATA[["347.347 光阳圆形头像.png","6000.4000 和直升机的合影.JPG","371.476 素材蚂蚁.png","3456.4608 竖版测试.jpg","4608.3456 调研1.jpg","4608.3456 调研照片.jpg"]]]></content>
   </entry>
   <entry>
     <title><![CDATA[tags]]></title>
